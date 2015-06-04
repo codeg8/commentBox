@@ -11,3 +11,5 @@
 .commentBox .commentImageUpload{  position: relative;left: -9px;top: 70px;background-image: url("../img/camera.png");background-size: 25px 25px;float:right;min-height: 25px; min-width: 25px; cursor: pointer; }
 .commentBox .commentImage .col-md-12{ border: 1px solid #d3d3d3;}
 .commentBox .commentImage img{ border: 5px solid white; border-bottom-width: 25px ;border-radius: 5px;}
+.commentBox .error{ border: 2px solid red;}
+.commentBox .error::after{ content: "This cannot be Empty !!!"; color: red;float:right;}

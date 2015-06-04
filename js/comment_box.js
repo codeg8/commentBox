@@ -3,7 +3,7 @@
     var pluginName = "comment_box",
         defaults = {
             commentPostUrl: '#',
-            method:'POST',
+            method:'POST'
         };
 
     function Plugin(element, options){
@@ -20,14 +20,14 @@
                 '<div class="col-md-12">'+
                     '<div class="well quickReview">How did you find this product ? Share Your Experience..</div>'+
                     '<div class="review-container well well-sm collapse">'+
-                    '<form class="commentForm" action="'+defaults.commentPostUrl+'" method="'+defaults.method+'">'+
+                    '<form class="commentForm" action="'+this.settings.commentPostUrl+'" method="'+this.settings.method+'">'+
                         '<h6>YOUR COMMENT</h6>'+
                         '<div class="rating pull-right"></div><hr>'+
-                        '<input type="text" class="hidden">'+
+                        '<input type="text" name="comment_box_title" class="hidden comment_box_title">'+
                         '<input type="file" accept="image/*" class="hidden commentImageUploadField">'+
                         '<div class="commentImageUpload"></div>'+
                         '<div class="contentEditableDiv commentBoxCommentTitle" contenteditable="true"><span>Title</span></div><hr>'+
-                        '<textarea class="hidden" rows="5" placeholder="Comment" ></textarea>'+
+                        '<textarea class="hidden comment_box_comment" rows="5" name="comment_box_comment" ></textarea>'+
                         '<div class="contentEditableDiv commentBoxComment" contenteditable="true"><span>Your Comment Here ..</span></div><hr>'+
                         '<a href="javascript:void(0)" class="close-review" data-original-title="" title="">Cancel</a>'+
                         '<input type="submit" value="POST" class="btn btn-primary pull-right" id="post-review-button" data-loading="Adding Your Review.." >'+
@@ -55,17 +55,20 @@
             var commentBoxCommentTitle = $('.commentBoxCommentTitle'),
                 commentBoxComment = $('.commentBoxComment');
             commentBoxCommentTitle.on('focus',function(){
+                $(this).removeClass("error");
                if($(this).html() == "<span>Title</span>"){
                    $(this).html("");
                }
             });
             commentBoxCommentTitle.on('blur',function(){
                 if($(this).html().trim() == ""){
+                    $(this).addClass("error");
                     $(this).html("<span>Title</span>");
                 }
             });
 
             commentBoxComment.on('focus',function(){
+                $(this).removeClass("error");
                 if($(this).html() == "<span>Your Comment Here ..</span>"){
                     $(this).html("");
                 }
@@ -73,6 +76,7 @@
 
             commentBoxComment.on('blur',function(){
                 if($(this).html().trim() == ""){
+                    $(this).addClass("error");
                     $(this).html("<span>Your Comment Here ..</span>");
                 }
             });
@@ -83,6 +87,26 @@
 
             $('.commentImageUploadField').on('change',function(){
                 readURL(this);
+            });
+
+            $('.commentForm').on('submit', function () {
+                var form = $(this),
+                    commentTitle = form.find(".commentBoxCommentTitle"),
+                    comment = form.find(".commentBoxComment"),
+                    validationFlag = 1;
+                if(commentTitle.html() == "" || commentTitle.html() == "<span>Title</span>"){
+                    commentTitle.addClass("error");
+                    validationFlag = 0;
+                }else{
+                    form.find('.comment_box_title').val(commentTitle.html());
+                }
+                if(comment.html() == "" || comment.html() == "<span>Your Comment Here ..</span>"){
+                    comment.addClass("error");
+                    validationFlag = 0;
+                }else{
+                    form.find('.comment_box_comment').val(comment.html());
+                }
+                return (validationFlag) ? true : false ;
             });
 
             function readURL(input) {
