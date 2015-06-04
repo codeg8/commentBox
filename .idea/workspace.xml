@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment_box.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comment_box.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/comment_box.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5675676" vertical-offset="1422" max-vertical-offset="2286">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="2286">
               <caret line="100" column="73" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="73" />
               <folding>
                 <element signature="e#4987#5820#0" expanded="false" />
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment_box.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="comment_box.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/comment_box.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.38591117" vertical-offset="0" max-vertical-offset="653">
+              <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -76,8 +76,8 @@
         <option value="$PROJECT_DIR$/comment_box.css" />
         <option value="$PROJECT_DIR$/comment_box.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/comment_box.css" />
         <option value="$PROJECT_DIR$/js/comment_box.js" />
+        <option value="$PROJECT_DIR$/css/comment_box.css" />
       </list>
     </option>
   </component>
@@ -292,14 +292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
@@ -308,21 +300,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/comment_box.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/comment_box.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5675676" vertical-offset="1422" max-vertical-offset="2286">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="2286">
           <caret line="100" column="73" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="73" />
           <folding>
             <element signature="e#4987#5820#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/comment_box.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38591117" vertical-offset="0" max-vertical-offset="653">
+          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>
