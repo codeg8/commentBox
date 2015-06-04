@@ -4,7 +4,7 @@ The image does not gets uploaded to the server but gets attached in the comment 
 
 
 # Usage
-Usage of this Plugin is vbery Simple. Just Include the JS and CSS Files in your Page using the following piece of Code.
+Usage of this Plugin is very Simple. Just Include the JS and CSS Files in your Page by using the following piece of Code.
 ```
 <!-- Include the CSS File-->
 <link rel="stylesheet" href="css/comment_box.css"/>
@@ -24,6 +24,9 @@ Attach the Plugin to this Div using the simple line of code.
   });
 </script>
 ```
+Here the addcomment.php is the file on server where the comments are posted. By default the method is POST you can change this by passing an extra parameter "method".
+
+#On Server Side
 In your addComment.php File you can get the post values simply.. 
 ```
 <?php 
